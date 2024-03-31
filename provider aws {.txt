@@ -1,5 +1,5 @@
 provider "aws" {
-  region = "your_aws_region"
+  region = "my_aws_region"
 }
 
 resource "aws_instance" "example" {
