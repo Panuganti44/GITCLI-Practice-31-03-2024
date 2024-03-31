@@ -1,0 +1,12 @@
+---
+- name: Create sample file
+  hosts: all
+  become: true
+  gather_facts: no
+  tasks:
+    - name: create a samplefile
+      ansible.builtin.file:
+        path: /home/ansibleadmin/examfile
+        state: touch
+        mode: '0644'
+
